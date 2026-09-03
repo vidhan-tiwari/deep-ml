@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T08:07:20.791Z",
+  "generated_at": "2026-10-28T08:07:22.898Z",
   "items": {
     "problem:22": {
       "kind": "problem",
@@ -156,6 +156,32 @@
       "last_pushed_at": "2026-03-01T14:45:17.963Z",
       "language": "python",
       "lines": 16
+    },
+    "problem:7": {
+      "kind": "problem",
+      "id": "7",
+      "title": "Matrix Transformation ",
+      "difficulty": "medium",
+      "category": "Linear Algebra",
+      "url": "https://www.deep-ml.com/problems/7",
+      "path": "problems/0007-matrix-transformation",
+      "first_solved_at": "2026-09-03T08:55:56.985Z",
+      "last_pushed_at": "2026-09-03T08:55:56.985Z",
+      "language": "python",
+      "lines": 22
+    },
+    "problem:10": {
+      "kind": "problem",
+      "id": "10",
+      "title": "Calculate Covariance Matrix",
+      "difficulty": "easy",
+      "category": "Statistics",
+      "url": "https://www.deep-ml.com/problems/10",
+      "path": "problems/0010-calculate-covariance-matrix",
+      "first_solved_at": "2026-09-03T10:24:47.805Z",
+      "last_pushed_at": "2026-09-03T10:24:47.805Z",
+      "language": "python",
+      "lines": 7
     }
   }
 }
