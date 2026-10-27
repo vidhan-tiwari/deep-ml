@@ -1,11 +1,13 @@
-import math
-import numpy as np
-def softmax(scores: list[float]) -> list[float]:
-    # Your code here
-    scores_ar = np.asarray(scores, dtype = float)
-    # to deal with numerical instability
-    shifted_scores = scores_ar - np.max(scores_ar)
+import torch
+import torch.nn.functional as F
 
-    soft_scores = np.exp(shifted_scores)/(np.sum(np.exp(shifted_scores)))
-    
-    return soft_scores
+def softmax(scores: list[float]) -> list[float]:
+    """
+    Compute the softmax activation function using PyTorch's built-in API.
+    Input:
+      - scores: list of floats (logits)
+    Returns:
+      - list of floats representing the softmax probabilities.
+    """
+    scores_t = torch.as_tensor(scores , dtype = torch.float32)
+    return torch.softmax(scores_t,dim = 0).tolist()
