@@ -1,11 +1,19 @@
-import numpy as np
+import torch
+from typing import List
 
-def log_softmax(scores: list) -> np.ndarray:
-	# find the max value 
-	x = np.asarray(scores, dtype = float)
-	x_max = np.max(x, axis = -1 , keepdims = True )
-	shifted_x = x - x_max
+def log_softmax(scores: List[float]) -> torch.Tensor:
+    """
+    Compute the log-softmax of a 1D list of scores using PyTorch.
+    Args:
+        scores: list of floats
+    Returns:
+        torch.Tensor of log-softmax values
+    """
+    # Your code here
+    x_t = torch.as_tensor(scores , dtype = torch.float32)
+    max_x_t = torch.amax(x_t , dim = -1 , keepdim = True)
+    shifted_x_t = x_t - max_x_t
 
-	log_sum_exp = np.log(np.sum(np.exp(shifted_x) , axis = -1 , keepdims = True))
-
-	return shifted_x - log_sum_exp
+    log_sum_exp = torch.log(torch.sum(torch.exp(shifted_x_t), dim = -1 , keepdim = True))
+    
+    return shifted_x_t - log_sum_exp
