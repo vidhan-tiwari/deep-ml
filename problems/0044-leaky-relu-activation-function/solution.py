@@ -12,4 +12,4 @@ def leaky_relu(z: torch.Tensor, alpha: float = 0.01) -> torch.Tensor:
         Output tensor after applying Leaky ReLU
     """
     # Your implementation here
-    pass
+    return torch.where(z <0 , z*alpha , z)
