@@ -11,4 +11,5 @@ def relu(z: float) -> torch.Tensor:
         A torch.Tensor with ReLU applied (max(0, z)).
     """
     # Your code here
-    pass
+    z_t = torch.tensor(z , dtype = torch.float32)
+    return  torch.maximum(torch.tensor(0.0),z_t)
