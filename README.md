@@ -2,7 +2,7 @@
 
 My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solution here was written by hand.
 
-**18** solved · 18 problems · 0 labs · 0 math
+**19** solved · 19 problems · 0 labs · 0 math
 
 ![Coverage](./coverage.svg)
 
@@ -30,6 +30,7 @@ My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solu
 | [Matrix times Matrix ](https://www.deep-ml.com/problems/9) | medium | 2026-03-01 | [solution](problems/0009-matrix-times-matrix) |
 | [Matrix Transformation ](https://www.deep-ml.com/problems/7) | medium | 2026-09-03 | [solution](problems/0007-matrix-transformation) |
 | [Single Neuron with Backpropagation](https://www.deep-ml.com/problems/25) | medium | 2026-10-27 | [solution](problems/0025-single-neuron-with-backpropagation) |
+| [Implementing a Custom Dense Layer in Python](https://www.deep-ml.com/problems/40) | hard | 2026-10-29 | [solution](problems/0040-implementing-a-custom-dense-layer-in-python) |
 
 ---
 
